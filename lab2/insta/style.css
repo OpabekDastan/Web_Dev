@@ -1,0 +1,172 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.page {
+  display: flex;
+  margin-top: 3%;
+  margin-left: 25%;
+}
+
+.login-container {
+  width: 260px;
+  height: 340px;
+  padding: 6%;
+  border: 1px solid #ccc;
+  border-radius: 1%;
+  text-align: center;
+  background-color: white;
+  margin-left: 3%;
+  margin-top: 2%;
+}
+
+.header {
+  margin-top: -2%;
+  padding: 5%;
+  font-family: "Brush Script MT", cursive;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  width: 95%;
+  padding: 4%;
+  margin-bottom: -5%;
+  border: 1px solid #b8b8b8;
+  border-radius: 3px;
+  font-size: 75%;
+  outline: none;
+  background-color: #f8f7f7;
+}
+
+.login-button {
+  margin-top: 5%;
+  color: white;
+  width: 105%;
+  padding: 9px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  background-color: #56a7fe;
+  margin-bottom: -5%;
+}
+
+.or-container {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.or-line {
+  flex-grow: 1;
+  height: 1px;
+  background: #ccc;
+}
+
+.or-text {
+  margin: 0 10px;
+  color: #777;
+}
+
+.forgot-password {
+  text-decoration: none;
+  color: #010102;
+  margin-top: 13%;
+  display: block;
+  font-size: 80%;
+}
+
+.facebook {
+  margin-top: 8%;
+  display: flex;
+  color: rgb(62, 62, 138);
+  padding-left: 15%;
+}
+
+.inface {
+  font-size: 85%;
+  text-decoration: none;
+  font-weight: 700;
+  padding-top: 1%;
+}
+
+.login-container2 {
+  margin-top: 2%;
+  width: 300px;
+  border: 1px solid #ccc;
+  padding: 3px 15px;
+  border-radius: 1%;
+  text-align: center;
+  background-color: white;
+  margin-left: 3%;
+  font-size: 85%;
+}
+.container3 {
+  padding: 1% 17%;
+  font-size: 90%;
+}
+.play {
+  padding-left: 10%;
+}
+.txt {
+  padding-top: 2%;
+  font-size: 70%;
+  text-align: center;
+}
+
+.soz {
+  padding-left: 1%;
+  text-decoration: none;
+  color: #a2a1a1;
+}
+.soz:hover {
+  text-decoration: underline;
+}
+
+.language-container {
+  width: 400px;
+  overflow-y: auto;
+  margin-left: 45%;
+  font-size: 80%;
+  color: #a2a1a1;
+  display: flex;
+}
+
+.custom-select {
+  position: relative;
+  display: inline-block;
+}
+
+.language-select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  color: #a2a1a1;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  right: 1%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+/* Стили для выбранных опций в списке (по желанию) */
+.language-select option:checked {
+  background-color: #007bff;
+  color: white;
+}
+
+.xz {
+  margin-left: 5%;
+  color: #a2a1a1;
+  font-size: 90%;
+}
