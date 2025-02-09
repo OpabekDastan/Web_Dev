@@ -1,0 +1,115 @@
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.head-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  gap: 30px;
+}
+.TODO {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 30px;
+}
+.task-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.task-container input {
+  width: 500px;
+  height: 50px;
+  border-radius: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 10px;
+  background-color: lightblue;
+  cursor: text;
+  border: none;
+  font-size: 25px;
+  font-weight: bolder;
+}
+
+.task-container button {
+  width: 100px; /* Ширина */
+  height: 70px; /* Высота */
+  font-size: 20px; /* Размер текста */
+  padding: 10px; /* Внутренниотступы */
+  border-radius: 30px; /* Закругление углов */
+  background-color: salmon; /* Цвет фона */
+  color: darkslategray; /* Цвет текста */
+  border: none; /* Убираем границу */
+  cursor: pointer; /* Делаем курсор указателем */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: bolder;
+}
+
+ul {
+  width: 500px; /* Ширина списка соответствует input */
+  padding: 0;
+  margin: 20px auto; /* Центрируем список */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+ul li {
+  width: 100%;
+  font-size: 20px;
+  padding: 15px 20px; /* Увеличил отступы */
+  background-color: #f3f3f3;
+  border-radius: 30px; /* Закругление углов */
+  margin-bottom: 10px; /* Отступ между задачами */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Легкая тень */
+}
+
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(imgs/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  left: -40px; /* Отступ от левого края */
+}
+
+ul li.checked {
+  color: #555;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  background-image: url(imgs/checked.png);
+}
+
+ul li span {
+  position: absolute;
+  right: 15px; /* Отступ от правого края */
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+ul li span:hover {
+  background: #edeef0;
+  border: 1px solid #ccc;
+}
