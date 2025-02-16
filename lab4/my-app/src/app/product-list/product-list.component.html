@@ -1,0 +1,30 @@
+<h2>Products</h2>
+<div class="gg">
+  <div *ngFor="let product of products" class="product">
+    <h3>
+      <a [title]="product.name + ' details'" href="{{product.href}}">  
+        {{ product.name }}
+        
+      </a>
+    </h3>
+    <div class="image-gallery">
+      <button *ngIf="currentImageIndex > 0"(click)="prevImage(product)" type="button">&#60;</button>
+      <img [src]="product.img[currentImageIndex]" alt="Product Image">
+      <button *ngIf="currentImageIndex < product.img.length - 1" (click)="nextImage(product)" type="button">&#62;</button>
+    </div>
+    
+
+    <p *ngIf="product.description">Description: {{ product.description }}</p>
+    <p *ngIf="product.description"><b>Rating: {{product.rating}}</b></p>
+
+
+    <a [href]="getWhatsAppShareLink(product.id)" target="_blank"><button type="button" >Share on WhatsApp</button></a>
+    <p></p>
+    <a [href]="getTelegramShareLink(product.id)" target="_blank"><button type="button">Share on Telegram</button></a>
+    
+    <app-product-alerts
+      [product]="product" 
+      (notify)="onNotify()">
+    </app-product-alerts>
+  </div>
+</div>
