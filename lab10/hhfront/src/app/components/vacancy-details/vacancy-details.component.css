@@ -1,0 +1,130 @@
+/* Styles for the entire Vacancy Form container */
+.vacancyform {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+}
+
+/* Styling labels for better readability */
+.vacancyform label {
+  display: block;
+  margin: 12px 0 6px;
+  color: #333;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+/* Styles for input fields */
+.vacancyform input[type="text"],
+.vacancyform input[type="number"],
+.vacancyform input[type="company"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.vacancyform input[type="text"]:focus,
+.vacancyform input[type="number"]:focus,
+.vacancyform input[type="company"]:focus {
+  border-color: #007bff;
+  background-color: #f1f8ff;
+  outline: none;
+}
+
+/* Styles for textarea */
+.vacancyform textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  min-height: 150px;
+  margin-bottom: 16px;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.vacancyform textarea:focus {
+  border-color: #007bff;
+  background-color: #f1f8ff;
+  outline: none;
+}
+
+/* Styling buttons */
+.savebtn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-right: 10px;
+}
+
+.savebtn:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Hover effect for the save button */
+.savebtn:hover:not(:disabled) {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Styling for paragraphs (Company name display) */
+.vacancyform p {
+  margin: 12px 0;
+  font-size: 16px;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Styling the delete button */
+.deletebtn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  background-color: #dc3545;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-right: 10px;
+}
+
+.deletebtn:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .vacancyform {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  .vacancyform input[type="text"],
+  .vacancyform input[type="number"],
+  .vacancyform input[type="company"],
+  .vacancyform textarea {
+    font-size: 14px;
+  }
+
+  .savebtn,
+  .deletebtn {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}

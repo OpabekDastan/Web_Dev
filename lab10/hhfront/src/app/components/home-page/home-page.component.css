@@ -1,0 +1,30 @@
+/* Центрируем содержимое внутри main */
+.main {
+  display: flex;
+  flex-direction: column; /* Располагаем элементы вертикально */
+  align-items: center; /* Центрируем по горизонтали */
+  justify-content: center; /* Центрируем по вертикали */
+  height: 100vh; /* Высота блока на всю высоту экрана */
+  text-align: center; /* Центрируем текст */
+}
+
+/* Стили для заголовка */
+h1 {
+  font-size: 36px;
+  color: #333;
+  text-align: center; /* Центрируем заголовок */
+  margin-bottom: 20px; /* Отступ снизу */
+}
+
+/* Стили для ссылок */
+.main a {
+  font-size: 20px;
+  color: #007bff;
+  text-decoration: none; /* Убираем подчеркивание */
+  margin: 10px 0; /* Отступы между ссылками */
+}
+
+.main a:hover {
+  color: #0056b3; /* Изменяем цвет при наведении */
+  text-decoration: underline; /* Добавляем подчеркивание при наведении */
+}

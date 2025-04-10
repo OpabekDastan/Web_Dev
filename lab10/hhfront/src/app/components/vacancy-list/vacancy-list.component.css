@@ -1,0 +1,93 @@
+/* Style for the container holding the title and button */
+div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 0 15px;
+  background-color: #f8f9fa; /* Light background for the container */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Style for the header */
+h1 {
+  font-size: 26px;
+  color: #333;
+  font-weight: 600; /* Slightly bolder font */
+  margin: 0; /* Removes default margin */
+}
+
+/* Style for the button */
+button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  outline: none; /* Removes the default focus outline */
+  transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darkens the button color on hover */
+  transform: scale(1.05); /* Slightly enlarges button on hover */
+}
+
+/* Styles for the list */
+ul {
+  list-style: none; /* Removes default list bullets */
+  padding: 0;
+  margin: 0;
+  max-width: 900px; /* Limits list width */
+  margin: 20px auto; /* Centers the list */
+}
+
+/* Styles for each list item */
+ul li {
+  padding: 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 10px; /* Adds space between items */
+  border-radius: 8px; /* Rounded corners for each list item */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Subtle shadow for depth */
+  transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+ul li:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Darker shadow on hover */
+}
+
+/* Style links to stand out */
+ul li a {
+  color: #007bff; /* Link color */
+  text-decoration: none; /* Removes underline */
+  font-weight: 600;
+  font-size: 18px;
+  display: block; /* Makes the entire list item clickable */
+  transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+ul li a:hover {
+  color: #0056b3; /* Darker blue on hover */
+  text-decoration: underline; /* Underlines link on hover */
+}
+
+/* Style for descriptions and salary to improve readability */
+ul li {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5; /* Increases line height for better readability */
+}
+
+/* Style for the horizontal rule to be more subtle */
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #eaeaea;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  opacity: 0.5; /* Slightly more transparent line */
+}
